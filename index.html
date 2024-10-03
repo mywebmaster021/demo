@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Option</title>
+    <title>UPI Payment Button</title>
     <style>
         .payment-button {
+            display: inline-block;
+            padding: 15px 25px;
             background-color: #f26522; /* Button color */
             color: white; /* Text color */
-            padding: 10px 20px; /* Button padding */
-            border: none; /* Remove border */
+            text-decoration: none; /* Remove underline */
             border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor */
             font-size: 16px; /* Font size */
-            text-decoration: none; /* Remove underline from links */
-            display: inline-block; /* Align link as a button */
+            text-align: center;
+            border: none; /* No border */
+            cursor: pointer; /* Pointer cursor */
+        }
+
+        .payment-button:hover {
+            background-color: #d7ab30; /* Button hover color */
         }
     </style>
 </head>
 <body>
 
-    <h2>Select a Payment Option</h2>
-    <a href="upi://pay?pa=8249210153@upi&pn=website&am=200&cu=INR" class="payment-button">Pay ₹200 via UPI</a>
+<button class="payment-button" onclick="openUPI()">Pay Now</button>
 
-    <!-- You can add more payment options below -->
-    <!-- Example for PayPal (replace 'YOUR_PAYPAL_LINK' with your actual PayPal link) -->
-    <!-- <a href="YOUR_PAYPAL_LINK" class="payment-button">Pay via PayPal</a> -->
-
-    <!-- Example for Stripe (you would need to implement backend for this) -->
-    <!-- <a href="/stripe-checkout" class="payment-button">Pay via Stripe</a> -->
+<script>
+    function openUPI() {
+        const upiLink = 'upi://pay?pa=8249210153@upi&pn=wwe&am=1000&cu=INR';
+        window.location.href = upiLink; // Redirects to UPI payment app
+    }
+</script>
 
 </body>
 </html>
