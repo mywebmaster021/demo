@@ -1,275 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Payment Option</title>
+    <style>
+        .payment-button {
+            background-color: #f26522; /* Button color */
+            color: white; /* Text color */
+            padding: 10px 20px; /* Button padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            font-size: 16px; /* Font size */
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Align link as a button */
+        }
+    </style>
 </head>
-
 <body>
-     <a href="upi://pay?pa=8249210153@upi&pn=website&am=200&cu=INR">
-        <button class="upi-button">Pay ₹200</button>
-    </a>
 
-    <header>
-        <div class="top-nav">
-            <div class="box-1">
+    <h2>Select a Payment Option</h2>
+    <a href="upi://pay?pa=8249210153@upi&pn=website&am=200&cu=INR" class="payment-button">Pay ₹200 via UPI</a>
 
-                <img src="bars.svg" alt="" srcset="" class="icon">
-            </div>
-            <div class="box-2">
+    <!-- You can add more payment options below -->
+    <!-- Example for PayPal (replace 'YOUR_PAYPAL_LINK' with your actual PayPal link) -->
+    <!-- <a href="YOUR_PAYPAL_LINK" class="payment-button">Pay via PayPal</a> -->
 
-                <img src="logo.png" alt="" srcset="" class="logo-img">
-            </div>
-            <div class="box-3"><img src="output-onlinepngtools.png" alt="" srcset="" class="cart-img"></div>
+    <!-- Example for Stripe (you would need to implement backend for this) -->
+    <!-- <a href="/stripe-checkout" class="payment-button">Pay via Stripe</a> -->
 
-        </div>
-        <div class="bottom-nav">
-            <input type="text" placeholder="Search for Product,Brands and More">
-        </div>
-    </header>
-    <div class="catagary">
-        <img src="top-bg.jpg" alt="" srcset="">
-    </div>
-    <div class="banner">
-        <img src="banner2.jpg" alt="" srcset="">
-    </div>
-    <div class="offer-time">
-        <div class="timer-container">
-            <div class="bo1">
-
-                <p class="f1">Deals of the Day</p>
-                <div class="run-time">
-
-                    <div class="clock">
-
-                        <img src="clock.svg" alt="" srcset="">
-                    </div>
-                    <div id="timer"></div> <!-- Removed the default 20:00 to avoid incorrect initial display -->
-                </div>
-            </div>
-            <div class="bo2">
-                <button class="sale-btn">SALE IS LIVE</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="producet">
-        <ul class="pro-box">
-            <li>
-                <div class="box-l1"><img src="download-1-Fy-V89-M.webp" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">Apple iPhone 14 Pro</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 1,44,990</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 499.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1.webp" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">Apple iPhone 14 Plus</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 79,900</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 491.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-V2-EL4r-N.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">SAMSUNG Galaxy S22 Ultra 5G (Phantom Black, 256 GB) (12 GB RAM)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 1,32,990</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 498.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-K0q-Xlf-S.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">OnePlus 11R 5G (Sonic Black, 8GB RAM, 128GB Storage)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 39,000</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 499.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-2.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">Google Pixel 7 (Snow, 128 GB) (8 GB RAM)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 50,000</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 487.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-T3-Y7yc-T.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">MOTOROLA Edge 40 (Nebula Green, 256 GB) (8 GB RAM)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 34,990</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 487.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-n-DUy96-V.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">APPLE AirPods Pro (2nd generation)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 24,990</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 491.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-1-Kc-Lx-Xw.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">APPLE New AirPods Max Bluetooth Headset (Green, On the Ear)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 59,900</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 497.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-Qm-SRo-N0.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">APPLE 2020 Macbook Air M1 - (8 GB/256 GB SSD/Mac OS Big Sur)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 99,990</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 495.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-KAFXgz5.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">Lenovo Legion 5 Pro Ryzen 7 Octa Core 5800H - (16 GB/1 TB SSD/Windows 11 Home)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 1,85,990</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 481.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-g-G7-QDr5.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">vivo V27 5G (Magic Blue, 128 GB) (8 GB RAM)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 36,999</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 478.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-            <li>
-                <div class="box-l1"><img src="1-gn2-BPB1.jpg" alt="" srcset=""></div>
-                <div class="box-l2">
-                    <div class="mini-box1">
-                        <p class="f2">Canon EOS 3000D DSLR Camera 1 Camera Body, 18 - 55 mm Lens (Black)</p>
-                    </div>
-                    <div class="mini-box2">
-                        <p class="f3">99% Off &nbsp;&nbsp;&nbsp;<span class="sp1">₹ 35,995</span></p>
-                    </div>
-                    <div class="mini-box3">
-                        <div class="box1">₹ 491.00</div>
-                        <div class="box2"><img src="SwOvZ3r.png" alt="" srcset=""></div>
-                    </div>
-
-                </div>
-                <div class="box-l3">Free Delivery in Two Days</div>
-            </li>
-           
-        </ul>
-    </div>
-     <a href="upi://pay?pa=8249210153@upi&pn=website&am=200&cu=INR">
-        <button class="upi-button">Pay ₹200</button>
-    </a>
-
-    <script src="scripts.js"></script>
 </body>
-
 </html>
