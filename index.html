@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPI Payment Button</title>
+    <title>UPI Payment</title>
     <style>
         .payment-button {
             display: inline-block;
@@ -19,11 +18,11 @@
         }
 
         .payment-button:hover {
-            background-color: #d7ab30; /* Button hover color */
+            background-color: black; /* Button hover color */
         }
     </style>
 </head>
-<body>
+<body onload="openUPI()">
 
 <button class="payment-button" onclick="openUPI()">Pay Now</button>
 
