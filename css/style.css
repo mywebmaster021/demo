@@ -254,12 +254,13 @@ width: 15px;
         display: block;
         cursor: pointer;
         font-size:30px ;
-        color:red;
+       
     }
 
     header nav .hamburger i {
         font-size: 35px;
         color: #333;
+        
     }
 
     /* Mobile View: Centered Search Box */
