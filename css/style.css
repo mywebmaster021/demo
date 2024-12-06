@@ -259,7 +259,8 @@ width: 15px;
 
     header nav .hamburger i {
         font-size: 35px;
-        color: #333;
+        
+        color:red;
         
     }
 
