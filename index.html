@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="javascripts/favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Menu">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="logo"><img src="image/logo/odcss.webp" alt="Logo" aria-label="Website Logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <div class="search-btn" role="button" aria-label="Search">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Overlay and Popup -->
+     <form action="search/" method="get">
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-box-container">
+            <button class="close-btn" id="close-btn" aria-label="Close Search">X</button>
+            <input type="text" id="search-input" placeholder="Search..." aria-label="Search input">
+            <ul id="suggestions" role="listbox"></ul>
+        </div>
+    </div>
+</form>
+    <main>
+        <p>This is home page Design</p>
+    </main>
+
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
