@@ -260,7 +260,7 @@ width: 15px;
     header nav .hamburger i {
         font-size: 35px;
         
-        color:red;
+        color: #333;
         
     }
 
@@ -297,10 +297,7 @@ width: 15px;
         cursor: pointer;
     }
 
-    header nav .hamburger i {
-        font-size: 35px;
-        color:red;
-    }
+
 
     /* Adjustments for Small Mobile Devices */
     .search-box-container {
