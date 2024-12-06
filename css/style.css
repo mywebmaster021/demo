@@ -253,7 +253,8 @@ width: 15px;
     header nav .hamburger {
         display: block;
         cursor: pointer;
-        font-size:27px ;
+        font-size:30px ;
+        color:red;
     }
 
     header nav .hamburger i {
